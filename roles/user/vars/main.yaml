@@ -1,0 +1,2 @@
+REDIS_HOST: redis.roboticgear.shop
+MONGODB_HOST: mongodb.roboticgear.shop
