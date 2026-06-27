@@ -21,7 +21,7 @@
       dest: /tmp/"{{ component }}".zip
 
 # this module thinks file exist on ansible control server, needs to extract on to remote machine
-# remote_src: yes means files already exist in catalogue server
+# remote_src: yes means files already exist in components and its  server
   - name: unzipping the downloaded file
     ansible.builtin.unarchive:
       src: /tmp/"{{ component }}".zip

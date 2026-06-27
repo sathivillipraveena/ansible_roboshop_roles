@@ -1,0 +1,5 @@
+CART_HOST: cart.roboticgear.shop
+USER_HOST: user.roboticgear.shop
+RABBITMQ_HOST: rabbitmq.roboticgear.shop
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123 
