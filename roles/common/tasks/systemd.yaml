@@ -1,7 +1,7 @@
-- name: copy catalogue service to system directory
+- name: copy "{{ component }}" service to system directory
   ansible.builtin.copy:
-    src: catalogue.service
-    dest: /etc/systemd/system/catalogue.service
+    src: "{{ component }}".service.jinja2
+    dest: /etc/systemd/system/"{{ component }}".service
 
 - name: daemon reload
   ansible.buitlin.systemd_service:
@@ -9,6 +9,6 @@
     
 - name: start the services
   ansible.builtin.services:
-    name: catalogue 
+    name: "{{ component }}" 
     state: restarted   # even app is not running we can restart
     enable: yes

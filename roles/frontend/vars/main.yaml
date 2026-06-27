@@ -1,5 +1,5 @@
-catalogue_host: catalogue.roboticgear.shop
-user_host: user.roboticgear.shop
-cart_host: cart.roboticgear.shop
-shipping_host: shipping.roboticgear.shop
-payment_host: payment.roboticgear.shop
+CATALOGUE_HOST: catalogue.roboticgear.shop
+USER_HOST: user.roboticgear.shop
+CART_HOST: cart.roboticgear.shop
+SHIPPING_HOST: shipping.roboticgear.shop
+PAYMENT_HOST: payment.roboticgear.shop
