@@ -1,1 +1,4 @@
-MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}"
+MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/mysql/mysql_root_password', region='us-east-1', decrypt=True ) }}" 
+#SSM parameters were used to store the passwords which is safe for pushing into the git 
+#ssm parameter is a AWS vault which can be used for storing sensitive info like passwords 
+# Although Ansible has its own vault it is difficult in maintaining passwords and vault files
