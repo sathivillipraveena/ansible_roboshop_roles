@@ -1,5 +1,5 @@
 - name: app setup
-  include_role:
+  import_role:
     name: common
     tasks_from: app-setup
 
