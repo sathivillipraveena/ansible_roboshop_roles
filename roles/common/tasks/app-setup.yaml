@@ -9,7 +9,7 @@
     shell: /sbin/nologin
     system: true
     home: /app
-      
+
   - name: download "{{ component }}"
     ansible.builtin.get_url: 
       url: https://roboshop-artifacts.s3.amazonaws.com/"{{ component }}"-v3.zip
